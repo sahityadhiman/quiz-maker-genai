@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: quiz-maker-genai
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: 'streamlit run app.py --server.headless true --server.address 0.0.0.0 --server.port $PORT'
+    healthCheckPath: /_stcore/health
