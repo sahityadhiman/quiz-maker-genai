@@ -9,7 +9,8 @@ st.title("📝 AI quiz maker")
 st.caption("Turn a topic or your study notes into a multiple-choice quiz.")
 
 api_key = os.getenv("GEMINI_API_KEY", "").strip()
-model = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")fallback_model = os.getenv("GEMINI_FALLBACK_MODEL", "gemini-3.5-flash-lite")
+model = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+fallback_model = os.getenv("GEMINI_FALLBACK_MODEL", "gemini-3.5-flash-lite")
 
 
 def generate_with_fallback(client, prompt):
