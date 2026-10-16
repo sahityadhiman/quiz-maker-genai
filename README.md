@@ -133,7 +133,7 @@ Set `GEMINI_API_KEY` in your local environment before starting the app. The app 
 |---|---:|---|---|
 | `GEMINI_API_KEY` | Yes | — | Gemini API key, set in Render's private environment or your local shell. All visitors to the public app share the configured key's quota. |
 | `GEMINI_MODEL` | No | `gemini-3.8-flash` | Gemini model name passed to the SDK. |
-| `GEMINI_FALLBACK_MODEL` | No | `gemini-3.6-flash` | Tried automatically if the primary model returns a temporary overload or rate-limit error. |
+| `GEMINI_FALLBACK_MODEL` | No | `gemini-3.5-flash-lite` | Tried automatically if the primary model returns a temporary overload or rate-limit error. |
 
 ## ☁️ Deploy on Render
 
